@@ -1,21 +1,84 @@
+<!DOCTYPE html>
+<html lang="am">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ethio Link - Official Website</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        body { background-color: #f0f4f8; color: #333; line-height: 1.6; }
+        
+        /* Navigation */
+        nav { background: #1a5276; color: white; padding: 20px; text-align: center; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        nav h1 { font-size: 1.8em; text-transform: uppercase; letter-spacing: 2px; }
 
-<div style="background: white; padding: 30px; border-radius: 15px; text-align: center; margin-top: 30px; box-shadow: 0 4px 10px rgba(0,0,0,0.05);">
-    <h2 style="color: #1a5276; margin-bottom: 15px;"><i class="fas fa-map-marker-alt"></i> የቢሮአችን አድራሻ</h2>
+        /* Hero Section with Solid Color (since images aren't uploaded) */
+        .hero { background: #2e86c1; color: white; padding: 60px 20px; text-align: center; border-bottom: 5px solid #1a5276; }
+        .hero h2 { font-size: 2.2em; margin-bottom: 10px; }
+
+        .container { max-width: 800px; margin: auto; padding: 20px; }
+        
+        /* Information Cards */
+        .card { background: white; padding: 30px; border-radius: 15px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); margin-bottom: 25px; text-align: center; }
+        .section-title { color: #1a5276; margin-bottom: 15px; border-bottom: 2px solid #eef2f3; padding-bottom: 10px; }
+
+        /* Officer Style */
+        .officer-box { background: #fdfdfd; padding: 20px; border: 1px solid #d4e6f1; border-radius: 10px; display: inline-block; margin: 15px 0; }
+        .officer-name { font-size: 1.4em; font-weight: 700; color: #1a5276; }
+
+        /* Action Buttons */
+        .btn-wa { background: #25D366; color: white; padding: 16px 32px; text-decoration: none; border-radius: 50px; display: inline-block; font-weight: bold; margin: 10px; font-size: 1.1em; box-shadow: 0 4px 10px rgba(37, 211, 102, 0.3); }
+        .btn-map { background: #4285F4; color: white; padding: 12px 24px; text-decoration: none; border-radius: 8px; display: inline-block; font-weight: bold; margin-top: 15px; }
+
+        footer { background: #1a5276; color: white; text-align: center; padding: 25px; margin-top: 40px; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <h1>Ethio Link</h1>
+    <p style="font-size: 0.8em; opacity: 0.9;">Overseas Employment Agency</p>
+</nav>
+
+<section class="hero">
+    <h2>ታማኝነት መለያችን ነው!</h2>
+    <p>የተሻለ የስራ እድልን ከእኛ ጋር ይጀምሩ</p>
+</section>
+
+<div class="container">
     
-    <div style="margin-bottom: 20px;">
-        <p style="font-size: 1.1em; color: #333; font-weight: 600;">አዲስ አበባ፣ ኢትዮጵያ</p>
-        <p style="color: #555;">አራዳ ክፍለ ከተማ፣ ከቀድሞው ኢዮሃ (Iyoha) ህንጻ ፊት ለፊት</p>
-    </div>
-
-    <a href="https://www.google.com/maps/search/Ethio+Link+Overseas+Employment+Agency+Addis+Ababa" target="_blank" 
-       style="background-color: #4285F4; color: white; padding: 12px 25px; text-decoration: none; border-radius: 30px; font-weight: bold; display: inline-block; transition: 0.3s;">
-       <i class="fas fa-directions"></i> በካርታ (Google Maps) ክፈት
-    </a>
-
-    <div style="margin-top: 30px;">
-        <p style="font-size: 0.9em; color: #888; margin-bottom: 10px;">Scan to Find Our Office</p>
-        <div style="width: 150px; height: 150px; background: #f0f0f0; margin: auto; display: flex; align-items: center; justify-content: center; border: 2px dashed #ccc;">
-            <span style="font-size: 0.8em; color: #999;">QR Code Place</span>
+    <div class="card">
+        <h3 class="section-title"><i class="fas fa-user-tie"></i> የድርጅቱ ኃላፊ (General Manager)</h3>
+        <div class="officer-box">
+            <p class="officer-name">DAWUD MOHAMMED HUSSEN</p>
+            <p style="color: #7f8c8d; font-weight: 600;">ኢትዮ ሊንክ የውጭ ሀገር የስራ ስምሪት ኤጀንሲ</p>
         </div>
     </div>
+
+    <div class="card">
+        <h3 class="section-title"><i class="fas fa-map-marked-alt"></i> የቢሮ አድራሻ</h3>
+        <p style="font-size: 1.1em;">አዲስ አበባ፣ አራዳ ክፍለ ከተማ</p>
+        <p style="color: #555;">ከቀድሞው ኢዮሃ (Iyoha) ህንጻ ፊት ለፊት</p>
+        <a href="https://www.google.com/maps/search/Ethio+Link+Overseas+Employment+Agency+Addis+Ababa" target="_blank" class="btn-map">
+            <i class="fas fa-location-arrow"></i> በጎግል ማፕ ክፈት (Open Maps)
+        </a>
+    </div>
+
+    <div class="card">
+        <h3 class="section-title">አሁኑኑ ያግኙን</h3>
+        <p style="margin-bottom: 15px;">በዋትስአፕ ፈጣን ምላሽ እንሰጣለን</p>
+        <a href="https://wa.me/251987574000" class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp 1</a>
+        <a href="https://wa.me/2519875929298" class="btn-wa"><i class="fab fa-whatsapp"></i> WhatsApp 2</a>
+    </div>
+
 </div>
+
+<footer>
+    <p>© 2026 Ethio Link Overseas Employment Agency</p>
+    <p style="font-size: 0.8em; margin-top: 5px; opacity: 0.7;">Trusted Connections. Global Opportunities.</p>
+</footer>
+
+</body>
+</html>
