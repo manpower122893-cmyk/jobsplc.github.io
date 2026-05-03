@@ -1,16 +1,6 @@
-<form action="https://formsubmit.co/manpower122893@gmail.com" method="POST" enctype="multipart/form-data">
-
-<input type="hidden" name="_subject" value="New Job Application">
-
-<input type="text" name="name" placeholder="Full Name" required>
-<input type="text" name="phone" placeholder="Phone Number" required>
-
-<input type="text" id="jobPosition" name="job" placeholder="Job Position" readonly>
-
-<input type="file" name="cv">
-
-<textarea name="message" placeholder="Experience / Message"></textarea>
-
-<button type="submit">Submit Application</button>
-
-</form>
+<script>
+function applyNow(job){
+  document.getElementById("jobPosition").value = job;
+  window.location.href = "#apply";
+}
+</script>
