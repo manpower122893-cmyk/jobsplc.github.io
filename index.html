@@ -6,67 +6,27 @@
 <title>Ethio Link Overseas Employment Agency PLC</title>
 
 <style>
-body {
-  margin:0;
-  font-family: Arial, sans-serif;
-  background:#f4f4f4;
-}
-
-header {
-  background:#0a1f44;
-  color:white;
-  padding:20px;
-  text-align:center;
-}
-
-nav {
-  background:#102a5c;
-  padding:10px;
-  text-align:center;
-}
-
-nav a {
-  color:white;
-  margin:10px;
-  text-decoration:none;
-  font-weight:bold;
-}
-
-section {
-  padding:40px;
-  max-width:1000px;
-  margin:auto;
-}
-
-h2 {
-  color:#0a1f44;
-}
-
-.card {
-  background:white;
-  padding:20px;
-  margin:10px 0;
-  border-radius:8px;
-  box-shadow:0 4px 10px rgba(0,0,0,0.1);
-}
-
-footer {
-  background:#0a1f44;
-  color:white;
-  text-align:center;
-  padding:20px;
-}
-
+body {margin:0;font-family:Arial;background:#f4f6f9;}
+header {background:#0a1f44;color:#fff;text-align:center;padding:30px;}
+nav {background:#12306b;text-align:center;padding:10px;}
+nav a {color:#fff;margin:10px;text-decoration:none;font-weight:bold;}
+section {max-width:1000px;margin:auto;padding:40px;}
+h2 {color:#0a1f44;}
+.card {background:#fff;padding:20px;margin:10px 0;border-radius:10px;box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+footer {background:#0a1f44;color:#fff;text-align:center;padding:20px;}
 .whatsapp {
-  position:fixed;
-  bottom:20px;
-  right:20px;
-  background:#25D366;
-  color:white;
-  padding:15px;
-  border-radius:50%;
-  text-decoration:none;
-  font-size:20px;
+ position:fixed;bottom:20px;right:20px;
+ background:#25D366;color:white;
+ padding:15px;border-radius:50%;
+ text-decoration:none;font-size:22px;
+}
+input, textarea {
+ width:100%;padding:10px;margin:10px 0;
+ border:1px solid #ccc;border-radius:5px;
+}
+button {
+ background:#0a1f44;color:#fff;
+ padding:10px 20px;border:none;border-radius:5px;
 }
 </style>
 </head>
@@ -74,6 +34,8 @@ footer {
 <body>
 
 <header>
+  <!-- LOGO -->
+  <img src="logo.png" width="100"><br>
   <h1>Ethio Link Overseas Employment Agency PLC</h1>
   <p>Addis Ababa, Ethiopia</p>
 </header>
@@ -82,49 +44,67 @@ footer {
   <a href="#about">About</a>
   <a href="#services">Services</a>
   <a href="#jobs">Jobs</a>
+  <a href="#apply">Apply</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
-  <h2>About Us</h2>
-  <div class="card">
-    <p>
-      Ethio Link Overseas Employment Agency PLC is a trusted and licensed agency 
-      based in Addis Ababa, Ethiopia. We connect Ethiopian workers with 
-      international job opportunities in the Middle East and other countries.
-    </p>
-  </div>
+<h2>About Us</h2>
+<div class="card">
+We are a licensed overseas employment agency connecting Ethiopian workers with international job opportunities.
+</div>
 </section>
 
 <section id="services">
-  <h2>Our Services</h2>
-  <div class="card">✔ Overseas Job Placement</div>
-  <div class="card">✔ Document Processing</div>
-  <div class="card">✔ Visa Assistance</div>
-  <div class="card">✔ Worker Training & Guidance</div>
+<h2>Our Services</h2>
+<div class="card">✔ Overseas Job Placement</div>
+<div class="card">✔ Visa Processing</div>
+<div class="card">✔ Training & Guidance</div>
+<div class="card">✔ Documentation Support</div>
 </section>
 
 <section id="jobs">
-  <h2>Available Jobs</h2>
-  <div class="card">• Housemaids - UAE / Saudi Arabia</div>
-  <div class="card">• Cleaners - Dubai</div>
-  <div class="card">• Factory Workers</div>
+<h2>Available Jobs</h2>
+<div class="card">• Housemaids - UAE / Saudi Arabia</div>
+<div class="card">• Cleaners - Dubai</div>
+<div class="card">• Factory Workers</div>
+</section>
+
+<section id="apply">
+<h2>Apply Now</h2>
+<div class="card">
+<form>
+<input type="text" placeholder="Full Name" required>
+<input type="text" placeholder="Phone Number" required>
+<input type="text" placeholder="Passport Number">
+<textarea placeholder="Experience / Message"></textarea>
+<button type="submit">Submit Application</button>
+</form>
+</div>
 </section>
 
 <section id="contact">
-  <h2>Contact Us</h2>
-  <div class="card">
-    <p><strong>Agent:</strong> Dawud Mohammed Hussen</p>
-    <p>📞 +251987574000 / +251987592929</p>
-    <p>📍 Addis Ababa, Ethiopia</p>
-    <p>📧 Email: info@ethiolink.com</p>
-  </div>
+<h2>Contact</h2>
+<div class="card">
+<p><strong>Agent:</strong> Dawud Mohammed Hussen</p>
+<p>📞 +251987574000 / +251987592929</p>
+
+<p>
+<a href="https://www.google.com/maps/search/Ethio+Link+Overseas+Employment+Agency+Addis+Ababa" target="_blank">
+📍 View Location
+</a>
+</p>
+
+<p>Scan Location QR:</p>
+<img src="https://myqrcode.com/qr-download/25473fcf" width="120">
+
+</div>
 </section>
 
 <a class="whatsapp" href="https://wa.me/251987574000">💬</a>
 
 <footer>
-  <p>© 2026 Ethio Link Overseas Employment Agency PLC</p>
+© 2026 Ethio Link Overseas Employment Agency PLC
 </footer>
 
 </body>
