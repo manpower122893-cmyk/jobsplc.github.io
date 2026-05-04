@@ -1,7 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ethio Link Agency</title>
+
+<style>
+body{margin:0;font-family:Arial;background:#f4f6f9;}
+header{background:#0a1f44;color:white;text-align:center;padding:40px;}
+nav{background:#12306b;text-align:center;padding:10px;}
+nav a, nav button{color:white;margin:10px;text-decoration:none;background:none;border:none;font-weight:bold;}
+section{max-width:1000px;margin:auto;padding:40px;}
+.card{background:white;padding:20px;margin:10px 0;border-radius:10px;}
+footer{background:#0a1f44;color:white;text-align:center;padding:20px;}
+
+@media(max-width:600px){
+ header h1{font-size:22px;}
+ section{padding:20px;}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<img src="logo.png" width="90">
+<h1>Ethio Link Overseas Employment Agency PLC</h1>
+<p>Addis Ababa, Ethiopia</p>
+</header>
+
+<nav>
+<a href="#jobs">Jobs</a>
+<a href="#apply">Apply</a>
+<a href="#contact">Contact</a>
+<button onclick="toggleLang()">አማርኛ</button>
+</nav>
+
+<section id="jobs">
+<h2>Available Jobs</h2>
+
 <div class="card">
-<h3>Agent</h3>
-<p><strong>Dawud Mohammed Hussen</strong></p>
-<p>📞 +251987574000</p>
-<p>📞 +251987592929</p>
-<p>📧 manpower122893@gmail.com</p>
+Housemaid - UAE  
+<br><button onclick="applyNow('Housemaid UAE')">Apply</button>
 </div>
+
+<div class="card">
+Cleaner - Saudi  
+<br><button onclick="applyNow('Cleaner Saudi')">Apply</button>
+</div>
+
+</section>
+
+<section id="apply">
+<h2>Apply Now</h2>
+
+<form action="https://formsubmit.co/manpower122893@gmail.com" method="POST" enctype="multipart/form-data">
+
+<input type="text" name="name" placeholder="Full Name" required>
+<input type="text" name="phone" placeholder="Phone Number" required>
+
+<input type="text" id="jobPosition" name="job" placeholder="Job" readonly>
+
+<input type="file" name="cv">
+
+<button type="submit">Submit</button>
+</form>
+
+</section>
+
+<section id="contact">
+<h2>Contact</h2>
+<p>Dawud Mohammed Hussen</p>
+<p>+251987574000 / +251987592929</p>
+</section>
+
+<footer>
+<p>© 2026 Ethio Link Agency</p>
+<p>Visitors: <span id="count">0</span></p>
+</footer>
+
+<script>
+function applyNow(job){
+ document.getElementById("jobPosition").value = job;
+ window.location.href="#apply";
+}
+
+function toggleLang(){
+ alert("Amharic coming soon");
+}
+
+let c=localStorage.getItem("visits")||0;
+c++;
+localStorage.setItem("visits",c);
+document.getElementById("count").innerText=c;
+</script>
+
+</body>
+</html>
