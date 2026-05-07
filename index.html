@@ -1,24 +1,25 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>Ethio Link Overseas Employment Agency PLC</title>
 
 <style>
+
 body{
 margin:0;
-font-family:Arial,sans-serif;
+font-family:Arial;
 background:#f4f6f9;
 color:#222;
 }
 
 header{
-background:linear-gradient(135deg,#0a1f44,#12306b);
+background:#0a1f44;
 color:white;
 text-align:center;
-padding:50px 20px;
+padding:40px 20px;
 }
 
 header img{
@@ -27,64 +28,86 @@ margin-bottom:15px;
 }
 
 header h1{
-margin:0;
-font-size:34px;
+margin:10px 0;
+font-size:32px;
 }
 
 header p{
 font-size:18px;
-margin-top:10px;
 }
 
 nav{
 background:#12306b;
 padding:15px;
 text-align:center;
-position:sticky;
-top:0;
-z-index:1000;
 }
 
-nav a, nav button{
+nav a{
 color:white;
 text-decoration:none;
-margin:10px;
+margin:15px;
 font-weight:bold;
-background:none;
-border:none;
 font-size:16px;
-cursor:pointer;
 }
 
 .hero{
-background:url('https://images.unsplash.com/photo-1521791136064-7986c2920216?q=80&w=1200&auto=format&fit=crop') center/cover;
-height:300px;
-display:flex;
-align-items:center;
-justify-content:center;
-color:white;
+background:white;
+padding:60px 20px;
 text-align:center;
 }
 
 .hero h2{
-background:rgba(0,0,0,0.5);
-padding:20px;
-border-radius:10px;
-font-size:32px;
+font-size:36px;
+color:#0a1f44;
+}
+
+.hero p{
+font-size:18px;
+max-width:700px;
+margin:auto;
+line-height:1.7;
+}
+
+.btn{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#0a1f44;
+color:white;
+text-decoration:none;
+border-radius:6px;
+font-weight:bold;
 }
 
 section{
-max-width:1000px;
+max-width:1100px;
 margin:auto;
-padding:40px 20px;
+padding:50px 20px;
+}
+
+.section-title{
+text-align:center;
+font-size:32px;
+color:#0a1f44;
+margin-bottom:30px;
+}
+
+.jobs{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
 }
 
 .card{
 background:white;
 padding:25px;
-margin:15px 0;
 border-radius:12px;
-box-shadow:0 0 10px rgba(0,0,0,0.1);
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+text-align:center;
+}
+
+.card h3{
+color:#0a1f44;
 }
 
 .card button{
@@ -92,44 +115,57 @@ background:#12306b;
 color:white;
 border:none;
 padding:10px 20px;
-border-radius:5px;
+border-radius:6px;
 cursor:pointer;
-margin-top:10px;
+font-weight:bold;
 }
 
 form{
-display:flex;
-flex-direction:column;
-gap:15px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-input, button{
-padding:12px;
-font-size:16px;
-border-radius:5px;
+form input,
+form textarea{
+width:100%;
+padding:14px;
+margin-bottom:15px;
 border:1px solid #ccc;
+border-radius:6px;
+font-size:16px;
 }
 
-button[type="submit"]{
-background:#12306b;
+form button{
+background:#0a1f44;
 color:white;
 border:none;
+padding:14px 20px;
+font-size:16px;
+border-radius:6px;
 cursor:pointer;
+width:100%;
+}
+
+.contact-box{
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 2px 10px rgba(0,0,0,0.1);
+line-height:2;
+}
+
+.map{
+margin-top:20px;
 }
 
 footer{
 background:#0a1f44;
 color:white;
 text-align:center;
-padding:25px;
+padding:30px;
 margin-top:40px;
-}
-
-.socials a{
-color:white;
-margin:0 10px;
-text-decoration:none;
-font-size:20px;
 }
 
 .whatsapp{
@@ -138,126 +174,135 @@ bottom:20px;
 right:20px;
 background:#25D366;
 color:white;
-padding:15px;
+padding:15px 18px;
 border-radius:50%;
-font-size:28px;
+font-size:24px;
 text-decoration:none;
-box-shadow:0 0 10px rgba(0,0,0,0.3);
-z-index:1000;
 }
 
-@media(max-width:600px){
+@media(max-width:700px){
 
 header h1{
 font-size:24px;
 }
 
-.hero{
-height:220px;
-}
-
 .hero h2{
-font-size:22px;
+font-size:28px;
 }
 
-section{
-padding:20px;
+nav a{
+display:block;
+margin:10px 0;
 }
 
 }
+
 </style>
 </head>
 
 <body>
 
 <header>
-<img src="logo.png" alt="Ethio Link Logo">
+
+<img src="logo.png">
 
 <h1>Ethio Link Overseas Employment Agency PLC</h1>
 
-<p>Addis Ababa, Ethiopia</p>
+<p>Trusted Overseas Recruitment Agency in Addis Ababa, Ethiopia</p>
 
 </header>
 
 <nav>
+
+<a href="#home">Home</a>
+
 <a href="#jobs">Jobs</a>
+
 <a href="#apply">Apply</a>
+
 <a href="#contact">Contact</a>
 
-<button onclick="toggleLang()">አማርኛ</button>
 </nav>
 
-<div class="hero">
-<h2>Your Trusted Overseas Employment Partner</h2>
-</div>
+<section class="hero" id="home">
+
+<h2>Your Future Starts Here</h2>
+
+<p>
+We connect Ethiopian skilled and domestic workers with trusted overseas employers in UAE, Saudi Arabia, Qatar, Kuwait and other Gulf countries.
+</p>
+
+<a href="#apply" class="btn">Apply Now</a>
+
+</section>
 
 <section id="jobs">
 
-<h2>Available Jobs</h2>
+<h2 class="section-title">Available Jobs</h2>
+
+<div class="jobs">
 
 <div class="card">
-<h3>Housemaid - UAE</h3>
-<p>Salary, accommodation and transport included.</p>
 
-<button onclick="applyNow('Housemaid UAE')">
-Apply Now
-</button>
+<h3>Housemaid - UAE</h3>
+
+<p>Salary + Accommodation + Food</p>
+
+<button onclick="applyNow('Housemaid UAE')">Apply</button>
+
 </div>
 
 <div class="card">
+
 <h3>Cleaner - Saudi Arabia</h3>
 
-<p>Immediate recruitment for qualified workers.</p>
+<p>Good salary and legal contract</p>
 
-<button onclick="applyNow('Cleaner Saudi Arabia')">
-Apply Now
-</button>
+<button onclick="applyNow('Cleaner Saudi')">Apply</button>
+
 </div>
 
 <div class="card">
+
 <h3>Hotel Worker - Qatar</h3>
 
-<p>Hotel jobs with good salary and benefits.</p>
+<p>Immediate recruitment available</p>
 
-<button onclick="applyNow('Hotel Worker Qatar')">
-Apply Now
-</button>
+<button onclick="applyNow('Hotel Worker Qatar')">Apply</button>
+
+</div>
+
+<div class="card">
+
+<h3>Factory Worker - Dubai</h3>
+
+<p>Visa support included</p>
+
+<button onclick="applyNow('Factory Worker Dubai')">Apply</button>
+
+</div>
+
 </div>
 
 </section>
 
 <section id="apply">
 
-<h2>Apply Now</h2>
+<h2 class="section-title">Apply Now</h2>
 
-<form action="https://formsubmit.co/manpower122893@gmail.com"
-method="POST"
-enctype="multipart/form-data">
+<form action="https://formsubmit.co/manpower122893@gmail.com" method="POST" enctype="multipart/form-data">
 
-<input type="hidden" name="_captcha" value="false">
+<input type="text" name="name" placeholder="Full Name" required>
 
-<input type="text"
-name="name"
-placeholder="Full Name"
-required>
+<input type="text" name="phone" placeholder="Phone Number" required>
 
-<input type="text"
-name="phone"
-placeholder="Phone Number"
-required>
+<input type="text" id="jobPosition" name="job" placeholder="Selected Job" readonly>
 
-<input type="text"
-id="jobPosition"
-name="job"
-placeholder="Selected Job"
-readonly>
+<input type="file" name="cv">
 
-<input type="file"
-name="cv">
+<textarea name="message" placeholder="Additional Information"></textarea>
 
-<button type="submit">
-Submit Application
-</button>
+<button type="submit">Submit Application</button>
 
 </form>
 
@@ -265,76 +310,63 @@ Submit Application
 
 <section id="contact">
 
-<h2>Contact Information</h2>
+<h2 class="section-title">Contact Us</h2>
 
-<p><strong>Agent Name:</strong> Dawud Mohammed Hussen</p>
+<div class="contact-box">
 
-<p><strong>Phone:</strong>
-+251987574000 /
-+251987592929
-</p>
+<p><strong>Agency Name:</strong> Ethio Link Overseas Employment Agency PLC</p>
 
-<p><strong>Email:</strong>
-manpower122893@gmail.com
-</p>
+<p><strong>Agent:</strong> Dawud Mohammed Hussen</p>
 
-<h3>Office Location</h3>
+<p><strong>Phone:</strong> +251987574000 / +251987592929</p>
 
-<iframe
-src="https://www.google.com/maps?q=Addis%20Ababa&output=embed"
-width="100%"
-height="300"
-style="border:0;border-radius:10px;"
-allowfullscreen=""
-loading="lazy">
-</iframe>
+<p><strong>Email:</strong> manpower122893@gmail.com</p>
+
+<p><strong>Location:</strong> Addis Ababa, Ethiopia</p>
+
+<div class="map">
+
+<a href="https://www.google.com/maps/search/Ethio+Link+Overseas+Employment+Agency+Addis+Ababa" target="_blank" class="btn">
+
+Open Google Map
+
+</a>
+
+</div>
+
+</div>
 
 </section>
 
 <footer>
 
-<p>
-© 2026 Ethio Link Overseas Employment Agency PLC
-</p>
+<p>© 2026 Ethio Link Overseas Employment Agency PLC</p>
 
-<p>
-Visitors:
-<span id="count">0</span>
-</p>
+<p>Trusted | Reliable | Professional</p>
 
-<div class="socials">
-<a href="https://wa.me/251987574000">WhatsApp</a>
-
-<a href="https://t.me/">Telegram</a>
-
-<a href="https://facebook.com/">Facebook</a>
-</div>
+<p>Visitors: <span id="count">0</span></p>
 
 </footer>
 
-<a class="whatsapp"
-href="https://wa.me/251987574000">
-💬
-</a>
+<a class="whatsapp" href="https://wa.me/251987574000">💬</a>
 
 <script>
 
 function applyNow(job){
+
 document.getElementById("jobPosition").value = job;
+
 window.location.href="#apply";
+
 }
 
-function toggleLang(){
-alert("Amharic version coming soon");
-}
-
-let c = localStorage.getItem("visits") || 0;
+let c=localStorage.getItem("visits") || 0;
 
 c++;
 
 localStorage.setItem("visits", c);
 
-document.getElementById("count").innerText = c;
+document.getElementById("count").innerText=c;
 
 </script>
 
